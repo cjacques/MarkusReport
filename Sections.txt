@@ -1,0 +1,49 @@
+================================================================================
+Sections
+================================================================================
+
+:supervised by: Morgan Magnin
+
+.. contents::
+
+Detailed specifications
+================================================================================
+
+- **Group management : the groups should be formed of two or three students of the
+  same section ;**
+
+    - instructors need to be able to add the students section through the web
+      interface or via the CSV file upload.
+    - the student list should have filter to sort students per section.
+    - instructors should be able to switch from two modes, in the assignment
+      property tab:
+
+	- groups have to be formed with students from the same section.
+	- groups **DO NOT** have to be formed with students from the same section.
+    - when switching to this mode, the application should display a warning
+      message if some of the students don't have a section associated to them.
+    - students should see whether the groups have to be formed of students in
+      the same section or not.
+    - when the mode is activated, inviters should not be able to invited
+      students in another section than theirs.
+
+
+- **Deadlines :  Each section needs to be associated with one specific
+  deadline ;** 
+
+    - this functionnality can be enabled only if groups are limited to
+      same-section students.
+    - when enable, instructors can specify one deadline per section in the
+      assignment property view.
+
+*If deadlines are specified per sections, it is logical that submissions rules
+could be too.* 
+
+UI suggestions
+================================================================================
+
+Database schema
+================================================================================
+
+Implementation
+================================================================================
