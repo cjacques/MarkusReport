@@ -42,8 +42,57 @@ could be too.*
 UI suggestions
 ================================================================================
 
+Sections & Users
+--------------------------------------------------------------------------------
+
+- Adding a section
+- Adding a list of users to a section: CSV file
+- Adding a section to a user
+
+Sections & Assignements
+--------------------------------------------------------------------------------
+
+- Limiting groups to sections
+- Adding deadlines to sections
+- Adding specific Submissions Rules to sections
+
 Database schema
 ================================================================================
+
+Sections table
+--------------------------------------------------------------------------------
+
+*This table is used to save all the sections. In the case of UofT, it should be
+from 2 to 3 sections. For Centrale Nantes, 12 sections (groups).*
+
+:id: int
+:name: string
+
+Users table
+--------------------------------------------------------------------------------
+
+We added a foreign key to sections. This is mostly used for students, but can
+also be used for Graders (we could then map graders to groups per sections).
+
+Assignments table
+--------------------------------------------------------------------------------
+
+There are a lot of options that can be added with the new section scheme.
+
+:section_due_dates: boolean, false
+:section_groups: boolean, false
+:section_submission_rules: boolean, false
+
+Section_due_dates table
+--------------------------------------------------------------------------------
+
+This mappes assignments and section, to add a specific due date to each section
+for an assignment.
+
+:id: int
+:section_id: int, fk
+:assignment_id: int, fk
+:due_date: date
 
 Implementation
 ================================================================================

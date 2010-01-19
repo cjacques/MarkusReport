@@ -1,0 +1,150 @@
+body{
+    font-family: georgia, minion, book antiqua, serif;
+    font-size: 0.8em;
+    text-align: justify;
+    color: #222;
+    line-height:  1.6em;
+}
+
+
+h1.title{
+   text-transform: uppercase;
+   text-align: center;
+   margin-bottom: 100px;
+}
+
+h1 a, h2 a, h3 a, h4 a{
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.8em;
+  margin-left: -20px;
+}
+
+h1, h2, h3, h3{
+  padding-top: 20px;
+}
+
+h1 a {
+   color: #660000;
+}
+
+h2 a {
+   color: #336600;
+}
+
+h3 a {
+   color: black;
+}
+
+h4 a{
+   color: #111;
+}
+
+
+#main{
+  width: 45%;
+  padding: 0px 50px;
+  float: left;
+}
+
+#contents{
+ position: fixed;
+ top: 10%;
+ left: 75%;
+ width: 22%; 
+}
+
+#contents a{
+  text-decoration: none;
+  color: back;,
+}
+
+#contents ul.simple, #contents ul li, #contents ul li ul{ 
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+
+#contents ul li{
+  margin-bottom: 10px;
+}
+
+#contents ul ul li, #contents ul li li li{
+  margin-bottom: 0px;
+  display:none;
+}
+
+#contents ul li:hover li{
+   display: block;
+}
+
+#contents ul li:hover li li{
+   display: none;
+}
+
+#contents ul li li:hover li{
+   display: block;
+}
+
+#contents ul li li:hover li li{
+   /*display: none;*/
+}
+
+#contents ul li li li:hover li{
+   display: block;
+}
+
+#contents ul li a{
+  color: #660000;
+}
+
+#contents li li a {
+  color: #336600;
+}
+
+#contents li li li a{
+   color: #464646;
+}
+
+#contents li li li li a{
+   color: #666;
+}
+
+
+#contents li li li a:hover{
+   color: #111;
+}
+
+
+#contents ul li{
+   padding-left: 0px;
+   font-size: 0.95em;
+}
+ 
+.side_note{
+   position: absolute;
+   left: 50%;
+   width: 25%;
+}
+
+.section{
+    width: 70%;
+    margin-left: 40px;
+}
+
+
+cite{
+  padding: 0 0 0 40px;
+  display: block;
+  text-align: justify;
+  color: #000;
+  line-height: 1.8em; 
+}
+
+li {
+   margin-bottom: 10px;
+}
+
+ul{
+  margin-bottom: 30px;
+}
