@@ -26,6 +26,8 @@ Detailed specifications
       the same section or not.
     - when the mode is activated, inviters should not be able to invited
       students in another section than theirs.
+    - if some students don't have a section, inviters with no section will be
+      able to invited only students without any sections.
 
 
 - **Deadlines :  Each section needs to be associated with one specific
@@ -58,6 +60,9 @@ Sections & Assignements
 
 Database schema
 ================================================================================
+
+.. image:: Images/section_db_schema.jpg
+    :width: 560px
 
 Sections table
 --------------------------------------------------------------------------------
@@ -94,5 +99,4 @@ for an assignment.
 :assignment_id: int, fk
 :due_date: date
 
-Implementation
-================================================================================
+

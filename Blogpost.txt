@@ -1,102 +1,84 @@
 ================================================================================
-Sections
+Blogpost
 ================================================================================
-
-:supervised by: Morgan Magnin
 
 .. contents::
 
-Detailed specifications
+English
 ================================================================================
 
-- **Group management : the groups should be formed of two or three students of the
-  same section ;**
+Other aspects of our project deal with faculty members: beyond an easier way of
+creating learning contents, mobiles connected devices allow new applications
+such as instantaneous presence assessment, or electronic evaluation. 
 
-    - instructors need to be able to add the students section through the web
-      interface or via the CSV file upload.
-    - the student list should have filter to sort students per section.
-    - instructors should be able to switch from two modes, in the assignment
-      property tab:
-
-	- groups have to be formed with students from the same section.
-	- groups **DO NOT** have to be formed with students from the same section.
-    - when switching to this mode, the application should display a warning
-      message if some of the students don't have a section associated to them.
-    - students should see whether the groups have to be formed of students in
-      the same section or not.
-    - when the mode is activated, inviters should not be able to invited
-      students in another section than theirs.
-    - if some students don't have a section, inviters with no section will be
-      able to invited only students without any sections.
+Educational staff will exploit HP technology to improve the evaluation process.
+For example, reports and code listings will not have to be printed anymore. They
+will be straightly corrected by teachers and then forwarded to students. The
+grading process for lab works will consequently be quickened. 
+Furthermore our project meets perfectly with our government recommendations
+about sustainable development. HP Technology allows saving more than 4000 paper
+sheets (for first year CS course). 
 
 
-- **Deadlines :  Each section needs to be associated with one specific
-  deadline ;** 
 
-    - this functionnality can be enabled only if groups are limited to
-      same-section students.
-    - when enable, instructors can specify one deadline per section in the
-      assignment property view.
+This year, a group of third year students will work on a online marking tool,
+MarkUs, with a canadian development team.
 
-*If deadlines are specified per sections, it is logical that submissions rules
-could be too.* 
 
-UI suggestions
+
+Français
 ================================================================================
 
-Sections & Users
---------------------------------------------------------------------------------
+Des tablets PC ont été obtenu par unconcours à but pédagogique et non
+lucratif, organisé par HP sur "L'utilisation du Tablet PC dans l'enseignement".
 
-- Adding a section
-- Adding a list of users to a section: CSV file
-- Adding a section to a user
+Depuis, l'équipe enseignante exploite la technologie HP dans le but d'améliorer
+le processus d'évaluation des élèves. Au délà d'un moyen de création plus aisé
+des cours, ces appareils portables et connectés en permanence permettent
+l'utilisation de nouvelles applications comme la vérification instantanée de la
+présence en cours, ou l'évaluation en directe des élèves, et ce, sans avoir à
+imprimer le travail fournis par l'élève. La technologie HP permet d'économiser
+plus de 4 000 feuilles de papier, rien que pour le cours d'informatique de 1er
+année !
 
-Sections & Assignements
---------------------------------------------------------------------------------
+Dans le but d'améliorer les processus de correction du code produit par les
+étudiants, une équipe de 2 étudiants de troisième année travaillera sur Markus,
+un projet open-source développé à l'Université depuis plus de 2 ans, dans le but
+d'étudier la faisabilité du déploiement à l'Ecole Centrale de Nantes et de
+procéder aux développements informatiques nécessaire pour y parvenir.
+En parallèle, un étudiant de 2ème année procède à l'internationnalisation de
+l'application, afin de pouvoir la traduire en français le temps voulu.
 
-- Limiting groups to sections
-- Adding deadlines to sections
-- Adding specific Submissions Rules to sections
+Markus est une application web destinée à simplifier la tâche de correction du
+code rendu par les étudiants dans le cadre de TP ou projets d'informatique. MarkUs confère la
+même facilité et souplesse de correction que l'on a avec un papier et un crayon.
+Il permet aussi aux responsables d'enseignement et aux étudiants de former des
+groupes de travail, et de travailler sur des projets en utilisant un SVN par
+ligne de commande, ou via l'application web (qui permet d'ajouter, de remplacer,
+ou de supprimer des fichiers très simplement).
 
-Database schema
-================================================================================
+Après une étude préliminaire, les fonctinnalités suivantes seront implémentés
+durant ce projet:
 
-.. image:: Images/section_db_schema.jpg
-    :width: 560px
+* gestion des dates butoirs : à chaque groupe de TP doit pouvoir être
+  associée une date butoir différente. En outre, il faudra faire en sorte
+  qu'apparaissent bien les différences entre le travail rendu à la date
+  butoir et ce qui a été (éventuellement) mis en ligne ensuite ;
+* affichage des notes sous forme d'appréciation et non plus de
+  pourcentage ;
+* affichage du nom du correcteur dans la vue "étudiant" ;
+* gestion des groupes : restreindre les binômes (voire trinômes)
+  à des membres du même groupe de TD
+* possibilité de déployer des métriques pour vérifier que le
+  code proposé par les étudiants ne résulte pas de
+  copier/coller sauvages ;
+* lors de l'export du travail proposé par les étudiants,
+  faire en sorte que les répertoires issus de la
+  récupération des dépôts Subversion aient bien pour
+  intitulé le nom des personnes ayant effectué le travail ;
 
-Sections table
---------------------------------------------------------------------------------
+Pour plus de détails sur Markus:
 
-*This table is used to save all the sections. In the case of UofT, it should be
-from 2 to 3 sections. For Centrale Nantes, 12 sections (groups).*
-
-:id: int
-:name: string
-
-Users table
---------------------------------------------------------------------------------
-
-We added a foreign key to sections. This is mostly used for students, but can
-also be used for Graders (we could then map graders to groups per sections).
-
-Assignments table
---------------------------------------------------------------------------------
-
-There are a lot of options that can be added with the new section scheme.
-
-:section_due_dates: boolean, false
-:section_groups: boolean, false
-:section_submission_rules: boolean, false
-
-Section_due_dates table
---------------------------------------------------------------------------------
-
-This mappes assignments and section, to add a specific due date to each section
-for an assignment.
-
-:id: int
-:section_id: int, fk
-:assignment_id: int, fk
-:due_date: date
-
+* site-web: markusproject.org
+* blog: blog.markusproject.org
 

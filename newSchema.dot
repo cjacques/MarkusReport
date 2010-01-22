@@ -4,8 +4,8 @@ digraph G {
    memberships -> groupings;
    memberships -> users;
    users -> sections;
-   assignmentssections -> assignments;
-   assignmentssections -> sections;
+   sectionduedates -> assignments;
+   sectionduedates -> sections;
 
    sections [url="" label = <<table border="1" cellborder="0"
    cellspacing="0" width="100">
@@ -16,12 +16,13 @@ digraph G {
    <tr><td width="100" align="left">updated_at</td></tr>
    </table>> shape = "plaintext" ];
 
-   assignmentssections [url="" label = <<table border="1" cellborder="0"
+   sectionduedates [url="" label = <<table border="1" cellborder="0"
    cellspacing="0" width="100">
-   <tr><td border="1" bgcolor="#bbbbbb" width="100">assignmentssections</td></tr>
+   <tr><td border="1" bgcolor="#bbbbbb" width="100">sectionduedates</td></tr>
    <tr><td width="100" bgcolor="#ffcccc" align="left">id</td></tr>
    <tr><td width="100" bgcolor="#ccffcc" align="left">section_id</td></tr>
    <tr><td width="100" bgcolor="#ccffcc" align="left">assignment_id</td></tr>
+   <tr><td width="100" align="left">due_date</td></tr>
    </table>> shape = "plaintext" ];
   
    assignments [url="" label = <<table border="1" cellborder="0"
