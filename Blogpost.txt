@@ -7,29 +7,32 @@ Blogpost
 English
 ================================================================================
 
-Other aspects of our project deal with faculty members: beyond an easier way of
-creating learning contents, mobiles connected devices allow new applications
-such as instantaneous presence assessment, or electronic evaluation. 
+Tablet PCs were given to Centrale Nantes when the school won a non lucratif and
+pedagogic competition organised by HP on "The use of Tablet PC for learning
+purpose".
 
-Educational staff will exploit HP technology to improve the evaluation process.
-For example, reports and code listings will not have to be printed anymore. They
-will be straightly corrected by teachers and then forwarded to students. The
-grading process for lab works will consequently be quickened. 
-Furthermore our project meets perfectly with our government recommendations
-about sustainable development. HP Technology allows saving more than 4000 paper
-sheets (for first year CS course). 
+Since then, educationnal staff exploits HP technology to improve evaluation
+process. Beyond an easier way of creating learning contents, mibiles connected
+devices allow new application such as instantaneous presence assessment, or
+electronic evaluation. Online and immediate grading process allows savong more
+than 4 000 paper sheet (for first year courses).
 
+In the aim of [..], a team of two students of third year will work on Markus,
+and open source project developped at the University of Toronto since more than
+2 years. These two students will study the possibiliuyt of deploying Markus at
+Centrale Nantes and and will proceed to functionnalities development in order to
+do so.
+During the same time, a second year student is voluntarely proceeding the
+internationnalization of the application, so to be able to translate it when the
+time comes.
 
-
-This year, a group of third year students will work on a online marking tool,
-MarkUs, with a canadian development team.
 
 
 
 Français
 ================================================================================
 
-Des tablets PC ont été obtenu par unconcours à but pédagogique et non
+Des tablets PC ont été obtenu par un concours à but pédagogique et non
 lucratif, organisé par HP sur "L'utilisation du Tablet PC dans l'enseignement".
 
 Depuis, l'équipe enseignante exploite la technologie HP dans le but d'améliorer
@@ -43,8 +46,8 @@ année !
 
 Dans le but d'améliorer les processus de correction du code produit par les
 étudiants, une équipe de 2 étudiants de troisième année travaillera sur Markus,
-un projet open-source développé à l'Université depuis plus de 2 ans, dans le but
-d'étudier la faisabilité du déploiement à l'Ecole Centrale de Nantes et de
+un projet open-source développé à l'Université depuis plus de 2 ans:
+Ces deux étudiants étudieront la faisabilité du déploiement à l'Ecole Centrale de Nantes et de
 procéder aux développements informatiques nécessaire pour y parvenir.
 En parallèle, un étudiant de 2ème année procède à l'internationnalisation de
 l'application, afin de pouvoir la traduire en français le temps voulu.
