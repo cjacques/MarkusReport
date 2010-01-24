@@ -17,9 +17,10 @@ devices allow new application such as instantaneous presence assessment, or
 electronic evaluation. Online and immediate grading process allows savong more
 than 4 000 paper sheet (for first year courses).
 
-In the aim of [..], a team of two students of third year will work on Markus,
-and open source project developped at the University of Toronto since more than
-2 years. These two students will study the possibiliuyt of deploying Markus at
+In the aim of improving instant grading process, a team of two students of
+third year will work on Markus,
+an open source project developped at the University of Toronto since more than
+2 years. These two students will study the possibility of deploying Markus at
 Centrale Nantes and and will proceed to functionnalities development in order to
 do so.
 During the same time, a second year student is voluntarely proceeding the
@@ -27,6 +28,28 @@ internationnalization of the application, so to be able to translate it when the
 time comes.
 
 
+MarkUs is an open-source tool which recreates the ease
+and flexibility of grading assignments with pen on paper, within a web
+application. It also allows students and instructors to form groups, and
+collaborate on assignments using command ligne SVN, or through the web app
+(which allows to add, replace and delete files very easily). 
+
+- Group management: the groups should be formed of two to three students of the
+  same section ;
+- Deadlines :  Each section needs to be associated with one specific deadline.
+  Moreover, we need to make appear the differences between the work that has
+  been submitted before the deadline and after ;
+- Marks should be displayed in comments and not percentage ;
+- The students should be able to see the name of the grader ;
+- Possibility of deploying metrics to check the students code isn't a savage
+  copy/paste ;
+- When exporting the students code, create repository with the name of the
+  students that has done the work, instead of the name of the group ;
+
+For more details on Markus:
+
+* website : markusproject.org
+* blog: blog.markusproject.org
 
 
 Français
